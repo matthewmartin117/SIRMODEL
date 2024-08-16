@@ -9,7 +9,7 @@
   <div class="header">
 <h1>SIR Modeling</h1>
 </div>
-
+<!-- INFO: discusess the SIR and some backround info -->
 <div class="Info">
 <h2>Info</h2>
 <p>Since the COVID-19 epidemic, researchers have predicted that there would be an increase in frequency of pandemics, due to several factors;
@@ -25,13 +25,28 @@
     influence the spread of an epidemic.</p>
 </div>
 
+<!-- Variables: explains what the variables represent , in context of covid-19 -->
 <div class="Variables">
-  <h2>Variables</h2>
-  <p>Info about the variables</p>
+  <h2>Understanding the SIR Model</h2>
+  <p>The SIR model is used to simulate the spread of infectious diseases by dividing the population into three categories:</p>
+  <ul>
+      <li><strong>S (Susceptible):</strong> Individuals who are vulnerable to the infection but not yet infected.</li>
+      <li><strong>I (Infected):</strong> Individuals who are currently infected and can spread the disease.</li>
+      <li><strong>R (Recovered):</strong> Individuals who have recovered from the disease and are assumed to be immune.</li>
+  </ul>
+  <p>The model uses two key parameters to calculate the dynamics of the disease:</p>
+  <ul>
+      <li><strong>a (Infection Rate):</strong> The rate at which susceptible individuals become infected after contact with an infected person.</li>
+      <li><strong>b (Recovery Rate):</strong> The rate at which infected individuals recover. It is the inverse of the average duration of the infection.</li>
+  </ul>
+  <p>The first model will visualize COVID-19 data using current average infection rate and recovery rate.</p>
+</div>
 </div>
 
+<!-- Form1: accepts just SIR vals and uses a and b vals in backend; fixed vals -->
 <div class="Inputform1">
-<h2>Enter SIR values</h2>
+<h2>COVID-19 Model</h2>
+<h3>Enter SIR Values</h3>
 <form>
   <label for="S">S value</label><br>
   <input type="text" name="S" ><br>
@@ -42,11 +57,22 @@
   <input type="submit" value="Model">
 </form>
 </div>
-
-<div class="graph">
+<!-- graph1: displays the graph of fixed covid SIR form -->
+<div class="graph1">
   <img src="../static/images/samplemodel.jpg" alt="model placeholder">
 </div>
 
+<!--INFO 2 non fixed: here the user can experiment with more inputs for a random disease  -->
+<!-- a b S I R time in days, steps, death rate ->
+
+
+
+
+
+
+
+
+<!-- Footer: Links to pertienent information as well as where the information is gathered from -->
 <div class="footer">
 <h2>More Information</h2>
   <div class="footer-links">
