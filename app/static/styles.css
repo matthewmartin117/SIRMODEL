@@ -26,16 +26,16 @@ body {
 }
 
 /* Input form styling */
-.Inputform1 {
+.Input {
   text-align: center; /* Center-aligns the form */
 }
 
-.Inputform1 label {
+.Input label {
   margin: 10px 0 5px;
   font-size: 14px;
 }
 
-.Inputform1 input[type="text"] {
+.Input input[type="text"] {
   padding: 10px;
   margin-bottom: 10px;
   width: 80%;
@@ -47,7 +47,7 @@ body {
   margin-right: auto; /* Centers the input fields */
 }
 
-.Inputform1 input[type="submit"] {
+.Input input[type="submit"] {
   padding: 10px 20px;
   background-color: #28a745;
   color: white;
@@ -60,7 +60,7 @@ body {
   margin-right: auto; /* Centers the submit button */
 }
 
-.Inputform1 input[type="submit"]:hover {
+.Input input[type="submit"]:hover {
   background-color: #218838;
 }
 

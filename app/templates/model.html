@@ -44,10 +44,10 @@
 </div>
 
 <!-- Form1: accepts just SIR vals and uses a and b vals in backend; fixed vals -->
-<div class="Inputform1">
+<div class="Input">
 <h2>COVID-19 Model</h2>
 <h3>Enter SIR Values</h3>
-<form>
+<form id="Inputform1">
   <label for="S">S value</label><br>
   <input type="text" name="S" ><br>
   <label for="I">I value</label><br>
@@ -59,17 +59,10 @@
 </div>
 <!-- graph1: displays the graph of fixed covid SIR form -->
 <div class="graph1">
-  <img src="../static/images/samplemodel.jpg" alt="model placeholder">
 </div>
 
 <!--INFO 2 non fixed: here the user can experiment with more inputs for a random disease  -->
 <!-- a b S I R time in days, steps, death rate ->
-
-
-
-
-
-
 
 
 <!-- Footer: Links to pertienent information as well as where the information is gathered from -->
@@ -82,6 +75,11 @@
 <a href="https://www.chathamhouse.org/2022/02/next-pandemic-when-could-it-be">When Is the Next Pandemic?</a>
   </div>
 </div>
+
+
+<!-- Script: app.js -->
+ <script src="../static/formhandler.js">
+ </script>
 
 </body>
 </html>
