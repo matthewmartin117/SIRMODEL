@@ -16,12 +16,13 @@ body {
 }
 
 /* Info section styling */
-.info {
+.Info {
   background-color:   #ffffff;
   padding: 15px;
   border-radius: 4px;
   margin-bottom: 20px;
   text-align: center; /* Center-aligns the text */
+  border: solid 1px;
 }
 
 /* Input form styling */
