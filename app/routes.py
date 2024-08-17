@@ -24,7 +24,7 @@ def handle_form():
    I = float(data.get('I'))
    R = float(data.get('R'))
 
-   img_io = calculate_sir_model(S, I, R, 0.0001786, 14, 60, 30)
+   img_io = calculate_sir_model(S, I, R, 30)
 
   # Save the plot to a BytesIO object and send it as a response
   #
