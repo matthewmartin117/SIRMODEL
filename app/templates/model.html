@@ -27,7 +27,7 @@
 
 <!-- Variables: explains what the variables represent , in context of covid-19 -->
 <div class="Variables">
-  <h2>Understanding the SIR Model</h2>
+  <h2>Understanding a simple SIR Model</h2>
   <p>The SIR model is used to simulate the spread of infectious diseases by dividing the population into three categories:</p>
   <ul>
       <li><strong>S (Susceptible):</strong> Individuals who are vulnerable to the infection but not yet infected.</li>
@@ -39,30 +39,72 @@
       <li><strong>a (Infection Rate):</strong> The rate at which susceptible individuals become infected after contact with an infected person.</li>
       <li><strong>b (Recovery Rate):</strong> The rate at which infected individuals recover. It is the inverse of the average duration of the infection.</li>
   </ul>
-  <p>The first model will visualize COVID-19 data using current average infection rate and recovery rate.</p>
+  <p>The first model will visualize COVID-19 data using average infection rate and recovery rate from the year 2021-2022 when the epidemic was at its peak.</p>
 </div>
 </div>
 
 <!-- Form1: accepts just SIR vals and uses a and b vals in backend; fixed vals -->
 <div class="Input">
-<h2>COVID-19 Model</h2>
+<h2>2021-2022 COVID-19 SIR Model</h2>
 <h3>Enter SIR Values</h3>
-<form id="Inputform1">
-  <label for="S">S value</label><br>
+<form id="SimpleSIRForm">
+  <label for="S">S value (Susceptible)</label><br>
   <input type="text" name="S" ><br>
-  <label for="I">I value</label><br>
+  <label for="I">I value (Infected)</label><br>
   <input type="text" name="I" ><br>
-  <label for="R">R value</label><br>
+  <label for="R">R value (Recovered)</label><br>
   <input type="text" name="R" ><br>
-  <input type="submit" value="Model">
+  <input type="submit" value="Run Simple Model">
 </form>
 </div>
 <!-- graph1: displays the graph of fixed covid SIR form -->
-<div class="graph1">
+<div class="graphSimple">
 </div>
 
 <!--INFO 2 non fixed: here the user can experiment with more inputs for a random disease  -->
-<!-- a b S I R time in days, steps, death rate ->
+<!-- a b S I R time in days, steps, death rate -->
+ <div class="Info">
+  <div class="Variables">
+    <h2>Experimenting with a more complex SIR Model</h2>
+    <p>The SIR model can use additional factors that can improve the accuracy of the model.
+      Infection rate and recovery rate can be used as a variable, as well as:  </p>
+    <ul>
+        <li><strong>T (Time): </strong>Length of time in days. Can help us examine the progression over a selected period of time. </li>
+        <li><strong>rD (die from disease):</strong> Rate at which infected individuals who do not recover. Example: rD = 0.02 means 2% of those infected will die.</li>
+        <li><strong>b (recovery rate):</strong> The length of days it takes for an individual to recover.Example: b = 7 days means those infected will recover after a week.</li>
+    </ul>
+    <p>The model below allows you to experiment with these parameters and how they affect the rate of a hypothetical epidemic</p>
+  </div>
+  </div>
+<!-- Form2: accepts just SIR vals and uses more complexity-->
+ <!-- a b S I R time in days, steps, death rate -->
+<div class="Input">
+  <h2>Experimental SIR Model</h2>
+  <h3>Enter SIR Values</h3>
+  <form id="ComplexSIRForm">
+    <label for="S">S value (Susceptible)</label><br>
+    <input type="text" name="S" ><br>
+    <label for="I">I value (Infected)</label><br>
+    <input type="text" name="I" ><br>
+    <label for="R">R value (Recovered)</label><br>
+    <input type="text" name="R" ><br>
+     <!-- add  addtional inputs here-->
+     <label for="b">b value (recovery time in days)</label><br>
+     <input type="text" name="b" ><br>
+     <label for="T">T value (Time in days)</label><br>
+     <input type="text" name="T" ><br>
+     <label for="rD">rD (death rate)</label><br>
+     <input type="text" name="rD" ><br>
+     <!-- end of additional inputs -->
+    <input type="submit" value="Run Complex Model">
+  </form>
+  </div>
+ <!-- end input form  -->
+
+  <!-- display for exp model -->
+  <div class="graphComplex">
+  </div>
+
 
 
 <!-- Footer: Links to pertienent information as well as where the information is gathered from -->
@@ -74,6 +116,10 @@
 <a href="https://scholarworks.smith.edu/textbooks/2/">Calculus in Context Textbook: Chapter 1</a>
 <a href="https://www.chathamhouse.org/2022/02/next-pandemic-when-could-it-be">When Is the Next Pandemic?</a>
   </div>
+</div>
+
+<div class="graph2">
+
 </div>
 
 
